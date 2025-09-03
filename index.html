@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello World CSS Example</title>
+    <style>
+        /* CSS Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        /* Body styling */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            color: #333;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        /* Container for content */
+        .container {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+        
+        /* Header styling */
+        header {
+            background: #2575fc;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+        
+        h1 {
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        /* Main content area */
+        .content {
+            padding: 30px;
+        }
+        
+        /* Hello world message */
+        .hello-world {
+            text-align: center;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #6a11cb;
+        }
+        
+        .hello-text {
+            font-size: 3rem;
+            color: #2575fc;
+            font-weight: bold;
+            margin: 20px 0;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Code example */
+        .code-example {
+            background: #2d3436;
+            color: #dfe6e9;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 25px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+        }
+        
+        .code-comment {
+            color: #81ecec;
+        }
+        
+        .code-selector {
+            color: #fab1a0;
+        }
+        
+        .code-property {
+            color: #74b9ff;
+        }
+        
+        .code-value {
+            color: #55efc4;
+        }
+        
+        /* Features list */
+        .features {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin: 30px 0;
+        }
+        
+        .feature {
+            flex-basis: 48%;
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        
+        .feature h3 {
+            color: #2575fc;
+            margin-bottom: 10px;
+        }
+        
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #f8f9fa;
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive design */
+        @media (max-width: 600px) {
+            .features {
+                flex-direction: column;
+            }
+            
+            .feature {
+                flex-basis: 100%;
+            }
+            
+            h1 {
+                font-size: 2.2rem;
+            }
+            
+            .hello-text {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CSS Example</h1>
+            <p class="subtitle">A simple "Hello World" page with modern CSS styling</p>
+        </header>
+        
+        <div class="content">
+            <div class="hello-world">
+                <p class="hello-text">Hello, World!</p>
+                <p>This page demonstrates basic CSS styling techniques.</p>
+            </div>
+            
+            <h2>CSS Code Example</h2>
+            <div class="code-example">
+                <span class="code-comment">/* Style the body */</span><br>
+                <span class="code-selector">body</span> {<br>
+                &nbsp;&nbsp;<span class="code-property">font-family</span>: <span class="code-value">'Segoe UI', Tahoma, sans-serif</span>;<br>
+                &nbsp;&nbsp;<span class="code-property">background</span>: <span class="code-value">linear-gradient(135deg, #6a11cb 0%, #2575fc 100%)</span>;<br>
+                &nbsp;&nbsp;<span class="code-property">color</span>: <span class="code-value">#333</span>;<br>
+                &nbsp;&nbsp;<span class="code-property">min-height</span>: <span class="code-value">100vh</span>;<br>
+                &nbsp;&nbsp;<span class="code-property">display</span>: <span class="code-value">flex</span>;<br>
+                &nbsp;&nbsp;<span class="code-property">justify-content</span>: <span class="code-value">center</span>;<br>
+                &nbsp;&nbsp;<span class="code-property">align-items</span>: <span class="code-value">center</span>;<br>
+                }<br>
+                <br>
+                <span class="code-comment">/* Style headings */</span><br>
+                <span class="code-selector">h1</span> {<br>
+                &nbsp;&nbsp;<span class="code-property">font-size</span>: <span class="code-value">2.8rem</span>;<br>
+                &nbsp;&nbsp;<span class="code-property">color</span>: <span class="code-value">white</span>;<br>
+                &nbsp;&nbsp;<span class="code-property">text-shadow</span>: <span class="code-value">2px 2px 4px rgba(0, 0, 0, 0.3)</span>;<br>
+                }
+            </div>
+            
+            <h2>CSS Features Demonstrated</h2>
+            <div class="features">
+                <div class="feature">
+                    <h3>Flexbox Layout</h3>
+                    <p>Modern layout model for arranging elements in a container</p>
+                </div>
+                <div class="feature">
+                    <h3>CSS Gradients</h3>
+                    <p>Smooth color transitions used in the background</p>
+                </div>
+                <div class="feature">
+                    <h3>Box Shadow</h3>
+                    <p>Adding depth to elements with shadow effects</p>
+                </div>
+                <div class="feature">
+                    <h3>Responsive Design</h3>
+                    <p>Adapts layout for different screen sizes</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>Created with pure HTML and CSS | Hello World Example</p>
+        </footer>
+    </div>
+</body>
+</html>
